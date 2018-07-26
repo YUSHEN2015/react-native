@@ -443,7 +443,7 @@ public class ReactWebViewManager extends SimpleViewManager<WebView> {
 
         Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
         chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
-        chooserIntent.putExtra(Intent.EXTRA_TITLE, "Image Chooser");
+        chooserIntent.putExtra(Intent.EXTRA_TITLE, "选择操作");
         chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, intentArray);
 
         reactContext.getCurrentActivity().startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
